@@ -89,7 +89,7 @@ body {
     
   </style>
   <script>
-    let countdownTime = 70; // Time in seconds (e.g., 300 = 5 minutes)
+    let countdownTime = 7200; // Time in seconds (e.g., 300 = 5 minutes)
     function startTimer() {
       const timerDisplay = document.getElementById("timer");
       const warningDisplay = document.getElementById("warning"); // Placeholder for the warning message
@@ -103,7 +103,7 @@ body {
         seconds = seconds < 10 ? "0" + seconds : seconds;
         timerDisplay.textContent = `Time Remaining: ${minutes}:${seconds}`;
         
-        if (countdownTime === 65) {
+        if (countdownTime === 60) {
           warningDisplay.textContent = "⚠️ Only 1 minute left! Please finalize your answers.";
         }
         
